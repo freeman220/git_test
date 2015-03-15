@@ -1,0 +1,55 @@
+/* Verizon Proprietary and Confidential */
+
+.skbar {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  table-layout: fixed;
+  right: 0px;
+  background-color: #404040;
+  color: white;
+  border: 0px;
+  z-index: 900;
+}
+
+.sk-button {
+  color: #FFFFFF;
+  font-size: 24px;
+  background: transparent;
+  border-style: solid;
+  border-color: #F00;
+  border: 2px;
+  padding: 0px;
+}
+
+.sk-button.active {
+  background: #00aacc;
+}
+
+.none-paddings {
+  border: 0px;
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+}
+
+.none-vpaddings {
+  width: 100%;
+  border-bottom: 0px;
+  border-top: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.sk-button[disabled] {
+  background-color: rgba(0,0,0,0.05);
+  color: #c7c7c7;
+  pointer-events: auto;
+}
+
+/* Pressed */
+input[type="button"][class="sk-button"]:active {
+  background: #00aacc;
+}

@@ -1,0 +1,27 @@
+/* Verizon Proprietary and Confidential */
+/* ----------------------------------
+ * Option menu
+ * ---------------------------------- */
+
+/*form[role="dialog"][data-type="confirm"],*/
+form[role="dialog"][data-subtype="menu"],
+form[role="dialog"][data-type="action"] {
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: transform ease-in-out .3s, visibility .3s;
+  line-height: 0;
+}
+
+/*form[role="dialog"][data-type="confirm"].visible,*/
+form[role="dialog"][data-subtype="menu"].visible,
+form[role="dialog"][data-type="action"].visible {
+  visibility: visible;
+  transform: translateY(0);
+  line-height: 0;
+  z-index: 1000;
+}
+
+form[role="dialog"][data-type="action"].submenu{
+  border: 0.1rem solid black;
+  left: 0;
+}
